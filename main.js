@@ -26,4 +26,29 @@ function exo2(couleurbg, couleurfont) {
     exo1h1.style.color = couleurfont;
 }
 
-exo1h1.addEventListener('click' , function () {exo2(theBackground,theColor)})
+exo1h1.addEventListener('click' , function () {exo2(theBackground,theColor)});
+
+
+//correction
+
+//Exo1
+let p = document.querySelector('p');
+let btn = document.querySelector('input');
+
+let add = (texte) => {
+    p.innerText = texte;
+}
+
+btn.addEventListener(('click', function () {add(pContent)}));
+
+//exo2
+
+let h1 = document.querySelector('h1');
+
+let changeCSS = (color, bgColor) => {
+    h1.style.color = color;
+    h1.style.backgroundColor = bgColor;
+}
+
+h1.addEventListener('click', function() {changeCSS(theColor, theBackground)
+});
